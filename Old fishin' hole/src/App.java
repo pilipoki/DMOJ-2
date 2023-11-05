@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * @author Darie Mitulescu
+ * @version 1.1.1
+ * Solves the CCC '09 J2 - Old Fishin' Hole problem (https://dmoj.ca/problem/ccc09j2)
+ */
 public class App {
     // store variable to keep track of number of ways to catch fish
     public static int numberOfWaysToCatchFish = 0;
@@ -7,9 +11,9 @@ public class App {
     public static int brownFish = -1, northernPike = -1, yellowPickerel = 0;
 
     public static void main(String[] args) throws Exception {
-        // github is working now
+        // GitHub is working now
         // Old Fishin' Hole
-
+        
         //create scanner for input
         Scanner sc = new Scanner(System.in);
 
@@ -80,7 +84,10 @@ public class App {
 
         System.out.println("Number of ways to catch fish: " + numberOfWaysToCatchFish);
     }
-
+/**
+ * Method to print out a combination of fish.
+ * No parameters or return values. 
+ */
     public static void printCombination() {
         if ((brownFish == -1 || northernPike == -1 || yellowPickerel == -1)
                 || (brownFish == 0 && northernPike == 0 && yellowPickerel == 0)) {
